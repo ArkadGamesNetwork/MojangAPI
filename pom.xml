@@ -4,12 +4,34 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>fr.mrcubee.minecraft.library</groupId>
-    <artifactId>MojangAPI</artifactId>
+    <groupId>fr.mrcubee.library</groupId>
+    <artifactId>mojang-api</artifactId>
     <version>1.0</version>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
     <name>MojangAPI</name>
     <description>Get player account information.</description>
+
+    <organization>
+        <name>ArkadGames</name>
+        <url>https://github.com/ArkadGamesNetwork</url>
+    </organization>
+
+    <distributionManagement>
+        <repository>
+            <id>arkadgames</id>
+            <url>http://nexus.arkadgames.net/repository/snapshots/</url>
+            <uniqueVersion>false</uniqueVersion>
+        </repository>
+    </distributionManagement>
+
+    <issueManagement>
+        <system>github</system>
+        <url>https://github.com/ArkadGamesNetwork/MojangAPI/issues</url>
+    </issueManagement>
 
     <repositories>
         <repository>
@@ -66,4 +88,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
